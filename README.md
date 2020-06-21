@@ -1,4 +1,4 @@
-
+![Meal Mate](mealmatelogo.PNG)
 ## Inspiration
 
 As the **COVID-19** crisis unfolds, our lifestyles are endless transforming. During these trying times many products and services like Instacart have surfaced that help us adapt to these changes. Instacart is an American company that operates a grocery delivery and pick-up service. They specialize in delivering groceries from local stores. A recent poll shows that **60 percent** of 18-24 year olds surveyed had already increased the frequency they use delivery services during COVID-19. The 35 to 54 year old age group had the biggest increase  in frequency, with **40 percent** saying they would do so during COVID-19 .In the midst of changing guidelines and expectations, having access to favorite foodservices and delivery items is offering customers comfort during this troublesome time. The efforts of services like Insta-cart have inspired us to develop a web app that enables volunteers (free of charge) to **aid individuals in their community **by picking up and delivering their groceries. 
