@@ -13,49 +13,49 @@
   </div>
 
   <div class="orders-wrap">
-    <div class="orders-container">
-      <h3 class="p-big-black">YOUR POSTINGS</h3>
-      <div class="orders-table">
-        <div class="orders-title-container">
-          <div class="order-title">
-            <div class="order-title-text">
-              <p class="p-gray">Name</p>
-            </div>
-          </div>
-          <div class="order-title">
-            <div class="order-title-text">
-              <p class="p-gray">Price</p>
-            </div>
-          </div>
-          <div class="order-title">
-            <div class="order-title-text">
-              <p class="p-gray">Category</p>
-            </div>
-          </div>
-        </div>
-        <% @user.products.each do |product| %>
+  #   <div class="orders-container">
+  #     <h3 class="p-big-black">YOU DELIVERED</h3>
+  #     <div class="orders-table">
+  #       <div class="orders-title-container">
+  #         <div class="order-title">
+  #           <div class="order-title-text">
+  #             <p class="p-gray">Name</p>
+  #           </div>
+  #         </div>
+  #         <div class="order-title">
+  #           <div class="order-title-text">
+  #             <p class="p-gray">Price</p>
+  #           </div>
+  #         </div>
+  #         <div class="order-title">
+  #           <div class="order-title-text">
+  #             <p class="p-gray">Category</p>
+  #           </div>
+  #         </div>
+  #       </div>
+  #       <% @user.products.each do |product| %>
 
-        <div class="order-card">
-          <div class="order-name">
-            <%= cl_image_tag(product.photo, width: 40, height: 40, class: "order-image-profile") %>
-            <p class="p-darkgray" style="font-size: 18px; font-weight: bold;"><%= product.name %></p>
-          </div>
-          <div class="order-customer">
-            <p class="p-darkgray"><%=  humanized_money_with_symbol(product.price) %></p>
-          </div>
-          <div class="order-status">
-            <p class="p-darkgray"><%= product.category.capitalize %></p>
-          </div>
-        </div>
-        <div class="line-dashboard"></div>
-        <% end %>
-      </div>
-    </div>
-  </div>
+  #       <div class="order-card">
+  #         <div class="order-name">
+  #           <%= cl_image_tag(product.photo, width: 40, height: 40, class: "order-image-profile") %>
+  #           <p class="p-darkgray" style="font-size: 18px; font-weight: bold;"><%= product.name %></p>
+  #         </div>
+  #         <div class="order-customer">
+  #           <p class="p-darkgray"><%=  humanized_money_with_symbol(product.price) %></p>
+  #         </div>
+  #         <div class="order-status">
+  #           <p class="p-darkgray"><%= product.category.capitalize %></p>
+  #         </div>
+  #       </div>
+  #       <div class="line-dashboard"></div>
+  #       <% end %>
+  #     </div>
+  #   </div>
+  # </div>
 
   <div class="orders-wrap">
     <div class="orders-container">
-      <h3 class="p-big-black">ORDERED FROM YOU</h3>
+      <h3 class="p-big-black">YOU DELIVERED</h3>
       <div class="orders-table">
         <div class="orders-title-container">
           <div class="order-title">
@@ -142,7 +142,7 @@
 
 <div class="orders-wrap">
   <div class="orders-container">
-    <h3 class="p-big-black">DROP OFF HUBS</h3>
+    <h3 class="p-big-black">GROCERY COLLECTION HUBS</h3>
     <%= simple_form_for current_user do |f| %>
       <div class="produce-categories" data-controller="select">
         <% @hubs.each do |hub| %>
