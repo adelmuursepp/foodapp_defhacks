@@ -36,7 +36,7 @@ sofia.remote_photo_url = "https://ak8.picdn.net/shutterstock/videos/24954458/thu
 sofia.save!
 
 cristina = User.create!(name: "Cristina", email:"cristina@gmail.com", password:"hola123", address: "Calle Juan de Mariana 15 Madrid")
-cristina.remote_photo_url = "https://backgrounddownload.com/wp-content/uploads/2018/09/white-background-portraits-6.jpg"
+cristina.remote_photo_url = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
 cristina.save!
 
 mariana = User.create!(name: "Mariana", email:"mariana@gmail.com", password:"hola123", address: "Calle del Marques de Casa Riera 4 Madrid")
